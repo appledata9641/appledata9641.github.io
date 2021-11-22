@@ -12,6 +12,16 @@
     $("button").addClass("animated shake");
   $("#left-well").children().css("color", "orange")
   });  
+   
+            $(document).ready(function() {
+                $("#text").hide();
+           
+                $("button").click(function() {      
+                    $("#text").slideDown(2000);  
+                        return false;
+                });
+            });
+        
 </script>
 <!DOCTYPE html>
 
@@ -52,7 +62,9 @@
          <div class="well" id="left-well">
                <button type="submit" >哪次不當你了啦</button>
      </div>
-    
+    <big>
+     <h4 id="text" style="">哈哈被當了 ~~~</h4>
+     </big>
     
   </body>
 </html>
