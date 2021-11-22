@@ -25,7 +25,11 @@
 $("h3").ready(function(){
   $("p").click(function(){
   $(this).hide();
-       $("button").addClass("animated bounce");
+       $(document).ready(function() {
+    $("button").addClass("animated bounce");
+    $(".well").addClass("animated shake");
+
+  });
   
 
   });
